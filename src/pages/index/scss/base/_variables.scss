@@ -1,0 +1,33 @@
+:root {
+    // background
+    --bg-main: #faf6f1;
+
+    --bg-box: #ffffff;
+
+    //text
+    --text-title: #234778;
+
+    --text-main: #6B7583;
+    --text-second: #45484B;
+    --text-active: #EEAF60;
+
+    //btn
+    --btnColor-default_bg: #234778;
+    --btnColor-default_text: #ffffff;
+
+    --btnColor-hover_bg: #234778;
+    --btnColor-hover_text: #ffffff;
+
+    --btnColor-focus_bg: #234778;
+    --btnColor-focus_text: #ffffff;
+    --btnBorder-focus_border: #000000;
+
+    // z-index
+    --index-elem-1: 1; // Для наползающих элементов
+    --index-elem-2: 2; // Для наползающих элементов
+    --index-elem-3: 3; // Для наползающих элементов
+    --index-mask: 4; // Для масок и оверлеев
+    --index-sidebar: 5; // Для сайдбаров
+    --index-modal: 6; // Для модалок
+    --index-topmost: 7; // Для перекрывающих все элементов
+}

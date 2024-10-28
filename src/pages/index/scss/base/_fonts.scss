@@ -1,0 +1,22 @@
+$font-path: '../../fonts/';
+
+@mixin font-face($font-family, $font-name, $weight) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url('#{$font-path}#{$font-name}.eot');
+        src: url('#{$font-path}#{$font-name}.eot?#iefix') format('embedded-opentype'),
+            url('#{$font-path}#{$font-name}.woff') format("woff"),
+            url('#{$font-path}#{$font-name}.woff2') format("woff2"),
+            url('#{$font-path}#{$font-name}.ttf') format('truetype');
+        font-weight: #{$weight};
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@include font-face("Bebas Neue Pro", "BebasNeuePro-Regular", 400); // Текст
+
+@include font-face("Bebas Neue Pro", "BebasNeuePro-SemiExpXBold", 800); // Главные заголовки
+@include font-face("Bebas Neue Pro", "BebasNeuePro-Bold", 700); // Заголовки
+
+@include font-face("Bebas Neue Pro Num", "BebasNeueProExpandedExtraBoldIt", 800); // Цыфры (указывать семейство)
