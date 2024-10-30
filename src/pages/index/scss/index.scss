@@ -1,2 +1,16 @@
-@import "section/first";
+// @use 'swiper/css';
+// @use 'swiper/css/pagination';
+// @use 'swiper/css/navigation';
+
+@use "section/hero";
+@use "section/benefits";
+@use "section/faq";
+@use "section/obtaining";
+@use "section/reviews";
+@use "section/guarantees";
+@use "section/other-services";
+@use "section/price";
+@use "section/contacts";
+
+@use "modal/call";
 

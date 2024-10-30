@@ -1,10 +1,10 @@
-@import "node_modules/normalize-scss/sass/normalize";
+@use "/node_modules/normalize-scss/sass/normalize";
 
-@import "base/variables";
-@import "base/fonts";
+@use "base/variables";
+@use "base/fonts";
 
-@import "blocks/header";
-@import "blocks/footer";
+@use "blocks/header";
+@use "blocks/footer";
 
 * {
     padding: 0;
@@ -12,7 +12,7 @@
 
     box-sizing: border-box;
 
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Bebas Neue Pro", sans-serif;
 }
 
 html {
