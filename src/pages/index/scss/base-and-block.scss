@@ -34,7 +34,13 @@ a {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 320px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 1240px;
+    }
 }
