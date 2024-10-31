@@ -1,0 +1,113 @@
+.hero {
+    &__top-title {
+        color: #9eadc0;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 10%;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin: 8px 0 0 0;
+        color: var(--text-main);
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 42px;
+    }
+
+    &__benefits {
+        margin: 390px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__benefit {
+        position: relative;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        min-width: 280px;
+        // gap: 10px;
+    }
+
+    &__benefit-bracket {
+
+        &_reverse {
+            transform: rotate(180deg);
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &__benefit-img {
+        margin: 0 0 0 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__benefit-content {
+        margin: 0 0 0 18px;
+    }
+
+    &__benefit-title {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    &__benefit-description {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 23px;
+        color: var(--text-main)
+    }
+
+    &__contacts {
+        margin: 20px 0 0 0;
+    }
+
+    &__contacts-text {
+        margin: 20px 0 0 0;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    &__contacts-btns {
+        margin: 20px 0 0 0;
+    }
+
+    &__contacts-btn {
+        width: 280px;
+        height: 80px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 34;
+        // padding: 10px 10px 10px 33px;
+        border-radius: 8px;
+        background: var(--btnColor-default_bg);
+        color: #fbf7f2;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
+
+    &__contacts-socials {
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__contacts-social {
+        width: 34px;
+        height: 34px;
+    }
+}
