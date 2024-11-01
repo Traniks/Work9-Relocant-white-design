@@ -1,5 +1,6 @@
 .contacts {
     margin: clamp(5rem, 3.393rem + 8.04vw, 10.625rem) 0 0 0;
+    padding: 0 0 90px 0;
 
     &__title {
         color: var(--text-main);
@@ -105,5 +106,10 @@
         &__bottom-socials {
             margin: 50px;
         }
+    }
+}
+@media(min-width: 1024px) {
+    .contacts {
+        padding: 0 0 0 0;
     }
 }
