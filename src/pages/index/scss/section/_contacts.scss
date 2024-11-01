@@ -1,0 +1,109 @@
+.contacts {
+    margin: clamp(5rem, 3.393rem + 8.04vw, 10.625rem) 0 0 0;
+
+    &__title {
+        color: var(--text-main);
+        font-size: clamp(3rem, 2.286rem + 3.57vw, 5.5rem);
+        font-weight: 800;
+        line-height: clamp(2.813rem, 2.277rem + 2.68vw, 4.688rem);
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin: clamp(3rem, 2.536rem + 2.32vw, 4.625rem) 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 54px;
+    }
+
+    &__item {
+        width: 220px;
+    }
+
+    &__item-img {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-box);
+        border-radius: 50%;
+    }
+
+    &__item-content {
+        margin: 40px 0 0 0;
+    }
+
+    &__item-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--text-title);
+    }
+
+    &__item-description {
+        font-size: 20px;
+        font-weight: 350;
+        line-height: 23px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
+    }
+
+    &__hr {
+        margin: 40px 0 0 0;
+
+        border: none;
+        height: 1px;
+        background: #000000;
+        opacity: 0.3;
+    }
+
+    &__bottom {
+        margin: 56px auto 0 auto;
+    }
+
+    &__bottom-text {
+        color: var(--text-main);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    &__bottom-socials {
+        margin: 38px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__bottom-social {
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 768px) {
+    .contacts {
+        &__wrapper {
+            flex-direction: row;
+            align-items: start;
+            justify-content: center;
+            gap: 190px;
+        }
+
+        &__hr {
+            margin: 28px 0 0 0;
+        }
+
+        &__bottom-socials {
+            margin: 50px;
+        }
+    }
+}
