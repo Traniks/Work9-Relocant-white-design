@@ -11,12 +11,11 @@
 
     &__wrapper {
         margin: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem) 0 0 0;
-        display: flex;
-        // flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 280px);
         justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 20px;
     }
 
     &__item {
@@ -58,8 +57,27 @@
     }
 }
 
+@media(min-width: 768px) {
+    .benefits {
+        &__wrapper {
+            grid-template-columns: repeat(2, 280px);
+        }
+    }
+}
+
 @media(min-width: 1024px) {
     .benefits {
+        &__wrapper {
+            grid-template-columns: repeat(3, 280px);
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    .benefits {
+        &__wrapper {
+            grid-template-columns: repeat(5, 220px);
+        }
         &__item {
             width: 220px;
             height: 180px;
