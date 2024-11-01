@@ -1,19 +1,19 @@
 .guarantees {
-    margin: 40px 0 0 0;
+    margin: clamp(2.5rem, 1.607rem + 4.46vw, 5.625rem) 0 0 0;
 
     &__title {
         color: var(--text-main);
-        font-size: 48px;
+        font-size: clamp(3rem, 2.286rem + 3.57vw, 5.5rem);
         font-weight: 800;
-        line-height: 45px;
+        line-height: clamp(2.813rem, 2.277rem + 2.68vw, 4.688rem);
         text-align: center;
     }
 
     &__wrapper {
-        margin: 30px 0 0 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        margin: clamp(1.875rem, 1.446rem + 2.14vw, 3.375rem) 0 0 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 280px;
         gap: 20px;
     }
 
@@ -21,7 +21,6 @@
         padding: 20px 10px 30px 10px;
         display: flex;
         flex-direction: column;
-        width: 300px;
         gap: 20px;
         border-radius: 8px;
         background: var(--bg-box);
@@ -29,7 +28,7 @@
         &-img {}
         
         &-content {
-            margin: 18px 0 0 0;
+            // margin: 18px 0 0 0;
         }
     
         &-title {
@@ -61,20 +60,57 @@
             text-transform: uppercase;
             
             background: var(--btnColor-default_bg);
+            border: none;
+            cursor: pointer;
         }
     }
 
     &__item_licence {
         padding: 20px 10px 20px 10px;
+    }
+}
 
-        &-img {}
-        
-        &-content {}
-    
-        &-title {}
-    
-        &-description {}
-    
-        &-btn {}
+@media(min-width: 425px) {
+    .guarantees {
+
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+    }
+}
+@media(min-width: 768px) {
+    .guarantees {
+        &__wrapper {
+            grid-template-columns: repeat(2, 300px);
+        }
+    }
+}
+@media(min-width: 1024px) {
+    .guarantees {
+        &__wrapper {
+            gap: 40px;
+            grid-template-columns: repeat(1, 580px);
+        }
+        &__item {
+            padding: 25px 20px 25px 40px;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+
+            &-btn {
+                display: block;
+                margin: 0 0 0 auto;
+            }
+        }
+        &__item_licence {
+            padding: 25px 20px 10px 40px;
+        }
+    }
+}
+@media(min-width: 1440px) {
+    .guarantees {
+        &__wrapper {
+            grid-template-columns: repeat(2, 580px);
+        }
     }
 }
