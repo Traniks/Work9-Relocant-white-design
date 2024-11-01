@@ -2,6 +2,12 @@
     margin: clamp(5rem, 3.393rem + 8.04vw, 10.625rem) 0 0 0;
     padding: 0 0 90px 0;
 
+    background: url("../img/bg-mob-2.png");
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-position: -140px 100px;
+    // background-size: cover;
+
     &__title {
         color: var(--text-main);
         font-size: clamp(3rem, 2.286rem + 3.57vw, 5.5rem);
@@ -92,6 +98,8 @@
 
 @media(min-width: 768px) {
     .contacts {
+        background: none;
+
         &__wrapper {
             flex-direction: row;
             align-items: start;

@@ -1,10 +1,10 @@
 .hero {
     padding: 6px 0 0 0;
 
-    background: url("../img/bg-mob-111.png");
+    background: url("../img/bg-mob-1.png");
     background-repeat: no-repeat;
     // background-size: 100% 100%;
-    background-position: center 60px;
+    background-position: clamp(-16.25rem, -25.625rem + 46.88vw, -3.125rem) 60px;
     // background-size: cover;
 
     &__top-title {
