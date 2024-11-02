@@ -36,8 +36,8 @@
                     <p class="header__content-text">Напишите нам, мы онлайн:</p>
 
                     <div class="header__content-socials">
-                        <img src="./icons/tg.svg" alt="telegram">
-                        <img src="./icons/ws.svg" alt="whatsapp">
+                        <img id="tg-1" src="./icons/tg.svg" alt="telegram">
+                        <img id="ws-1" src="./icons/ws.svg" alt="whatsapp">
                     </div>
 
                     <div class="header__content-number">
@@ -106,8 +106,8 @@
                     <div class="hero__contacts-btns">
                         <button class="hero__contacts-btn">Узнать подробности</button>
                         <div class="hero__contacts-socials">
-                            <img src="./icons/tg.svg" alt="telegram" class="hero__contacts-social">
-                            <img src="./icons/ws.svg" alt="whatsapp" class="hero__contacts-social">
+                            <img id="tg-2" src="./icons/tg.svg" alt="telegram" class="hero__contacts-social">
+                            <img id="ws-2" src="./icons/ws.svg" alt="whatsapp" class="hero__contacts-social">
                         </div>
                     </div>
                 </div>
@@ -404,8 +404,8 @@
                         <p class="obtaining__item-description">Вы отправляете запрос к нам, это можно сделать в мессенджере</p>
 
                         <div class="obtaining__item-social">
-                            <img src="./icons/tg.svg" alt="telegram">
-                            <img src="./icons/ws.svg" alt="whatsapp">
+                            <img id="tg-3" src="./icons/tg.svg" alt="telegram">
+                            <img id="ws-3" src="./icons/ws.svg" alt="whatsapp">
                         </div>
                     </div>
 
@@ -741,8 +741,8 @@
                     <p class="contacts__bottom-text">Свяжитесь с нами через WhatsApp или Telegram<br> для консультации или запишитесь на визит в наш офис</p>
 
                     <div class="contacts__bottom-socials">
-                        <img src="./icons/tg.svg" alt="Telegram" class="contacts__bottom-social">
-                        <img src="./icons/ws.svg" alt="WhatsApp" class="contacts__bottom-social">
+                        <img id="tg-4" src="./icons/tg.svg" alt="Telegram" class="contacts__bottom-social">
+                        <img id="ws-4" src="./icons/ws.svg" alt="WhatsApp" class="contacts__bottom-social">
                     </div>
                 </div>
             </div>
@@ -760,12 +760,46 @@
                 </div>
 
                 <div class="footer__content-socials">
-                    <img src="./icons/tg.svg" alt="telegram">
-                    <img src="./icons/ws.svg" alt="whatsapp">
+                    <img id="tg-5" src="./icons/tg.svg" alt="telegram">
+                    <img id="ws-5" src="./icons/ws.svg" alt="whatsapp">
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Модалка телеграмма -->
+    <section class="modal-tg" id="modal-tg">
+        <div class="container">
+            <div class="modal-tg__wrapper">
+                <img class="modal-tg__cross" id="modal-tg__cross" src="./icons/cross.svg" alt="cross">
+                <h2 class="modal-tg__title">Напишите нам в Telegram!</h2>
+
+                <div class="modal-tg__content">
+                    <a href="https://t.me/relocant_oae_bot" target="_blank">
+                        <button class="modal-tg__btn modal-tg__btn_tg">Telegram</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка ватсапа -->
+    <section class="modal-ws" id="modal-ws">
+        <div class="container">
+            <div class="modal-ws__wrapper">
+                <img class="modal-ws__cross" id="modal-ws__cross" src="./icons/cross.svg" alt="cross">
+                <h2 class="modal-ws__title">Напишите нам в WhatsApp!</h2>
+
+                <div class="modal-ws__content">
+                    <a href="https://wa.me/971507190519" target="_blank">
+                        <button class="modal-ws__btn modal-ws__btn_ws">WhatsApp</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
     
     <script src="js/index.js"></script>
 </body>
