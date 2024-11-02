@@ -90,6 +90,11 @@
         line-height: 23px;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.5s;
+        
+        &:hover {
+            background: #203e68;
+        }
     }
 
     &__btn:after {
