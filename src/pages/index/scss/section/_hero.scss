@@ -142,11 +142,28 @@
 
 @media(min-width: 768px) {
     .hero {
-        padding: 40px 0 0 0;
+        padding: 100px 0 0 0;
         background: none;
 
+        .bg-1 {
+            position: absolute;
+            // width: 1920px;
+            // height: 300px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background: url("../img/bg-1.webp");
+            background-repeat: no-repeat;
+            // background-size: 100px 100px;
+            background-position: clamp(-55.938rem, -98.438rem + 88.54vw, -18.75rem) 70px;
+            // background-size: cover;
+            z-index: -1;
+        }
+
         &__top-title {
-            font-size: clamp(1.25rem, 0.821rem + 0.89vw, 1.625rem);
+            font-size: clamp(1.25rem, -0.607rem + 3.87vw, 2.875rem);
             line-height: clamp(1.313rem, -0.688rem + 4.17vw, 3.063rem);
         }
     
@@ -180,6 +197,14 @@
         &__contacts-text {
             width: 190px;
             text-align: start;
+        }
+    }
+}
+@media(min-width: 1440px) {
+    .hero {
+        .bg-1 {
+            background-position: center top;
+            background-size: contain;
         }
     }
 }

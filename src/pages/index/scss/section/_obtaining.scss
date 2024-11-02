@@ -1,5 +1,6 @@
 .obtaining {
     margin: clamp(2.813rem, 2.009rem + 4.02vw, 5.625rem) 0 0 0;
+    position: relative;
 
     &__title {
         font-size: clamp(3rem, 2.286rem + 3.57vw, 5.5rem);
@@ -84,6 +85,7 @@
 }
 @media(min-width: 768px) {
     .obtaining {
+
         &__wrapper {
             grid-template-columns: repeat(2, 300px);
         }

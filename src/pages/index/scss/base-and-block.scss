@@ -44,3 +44,56 @@ a {
         max-width: 1240px;
     }
 }
+
+
+@media(min-width: 1440px) {
+    .bg-2 {
+        position: absolute;
+        // width: 1920px;
+        // height: 300px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background: url("../img/bg-2.webp");
+        background-repeat: no-repeat;
+        // background-size: 100px 100px;
+        background-position: right 3520px;
+        // background-size: cover;
+        z-index: -1;
+    }
+    .bg-3 {
+        position: absolute;
+        // width: 1920px;
+        // height: 300px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background: url("../img/bg-3.webp");
+        background-repeat: no-repeat;
+        // background-size: 100px 100px;
+        background-position: center 6855px;
+        // background-size: cover;
+        z-index: -1;
+    }
+    .bg-4 {
+        position: absolute;
+        // width: 1920px;
+        // height: 300px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background: url("../img/bg-4.webp");
+        background-repeat: no-repeat;
+        // background-size: 100px 100px;
+        background-position: left 100%;
+        // background-size: cover;
+        z-index: -1;
+        background-size: contain;
+    }
+}
