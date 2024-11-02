@@ -1,5 +1,5 @@
-import { burger } from './blocks/burger'
+import { faq } from './blocks/faq'
 
 document.addEventListener('DOMContentLoaded', () => {
-	// burger()
+	faq()
 })

@@ -99,6 +99,7 @@
 @media(min-width: 768px) {
     .contacts {
         background: none;
+        padding: 0 0 0 0;
 
         &__wrapper {
             flex-direction: row;
@@ -114,10 +115,5 @@
         &__bottom-socials {
             margin: 50px;
         }
-    }
-}
-@media(min-width: 1024px) {
-    .contacts {
-        padding: 0 0 0 0;
     }
 }
