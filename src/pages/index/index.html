@@ -45,7 +45,7 @@
                         <button>Показать</button>
                     </div>
 
-                    <button class="header__content-btn">Заказать звонок</button>
+                    <button id="order-1" class="header__content-btn">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -791,24 +791,31 @@
                 <img class="modal-order__cross" id="modal-order__cross" src="icons/cross.svg" alt="cross">
 
                 <div class="modal-order__content">
-                    <h2 class="modal-order__title">Введите свой номер телефона и мы свяжемся с вами</h2>
+                    <h2 class="modal-order__title">Введите данные чтобы получить<br> консультацию!</h2>
 
                     <form class="modal-order__mail" id="modal-order__mail" action="mail.php" method="post">
-                        <input id="modal-order__input" placeholder="НОМЕР ТЕЛЕФОНА" name="username" required>
+                        <input id="modal-order__input-name" placeholder="Ваше имя" name="username" required>
+                        <input id="modal-order__input-tel" placeholder="Ваш номер телефона" name="usertel" required>
 
-                        <div class="modal-order__checkbox">
-                            <input checked="" type="checkbox" required>
-                            <p>Я согласен на обработку персональных данных</p>
-                        </div>
-
+                        <button type="submit" class="modal-order__btn">Получите консультацию</button>
                         <!-- <input type="hidden" value="" name="type" id="all-modal-type"> -->
-                        <button type="submit" class="modal-order__button" onclick="
+                        <!-- <button type="submit" class="modal-order__button" onclick="
                         if(document.querySelector('#modal-order__input').validity.valid){
                             document.querySelector('#modal-thanks').classList.add('modal-thanks_active');
                             document.body.style.overflow = 'hidden';
                             document.querySelector('#modal-order').classList.remove('modal-order_active');
-                        }">ОТПРАВИТЬ</button>
+                        }">ОТПРАВИТЬ</button> -->
                     </form>
+
+                    <div class="modal-order__socials">
+                        <a href="https://t.me/relocant_oae_bot">
+                            <img src="./icons/tg.svg" alt="Telegram">
+                        </a>
+
+                        <a href="https://wa.me/971507190519">
+                            <img src="./icons/ws.svg" alt="WhatsApp">
+                        </a>
+                    </div>
                 </div>
 
             </div>

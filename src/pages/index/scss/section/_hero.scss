@@ -112,6 +112,7 @@
         text-transform: uppercase;
         cursor: pointer;
     }
+    
     &__contacts-btn::after {
         content: url("../../icons/hero/arrow-btn.svg");
         position: absolute;

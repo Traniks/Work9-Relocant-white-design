@@ -2,11 +2,11 @@ export function modal() {
 	// let scrollPosition = 0 // Глобальная переменная для хранения позиции прокрутки
 
 	// Для открытия модалок
-	function open(socialID, modalID) {
-		const social = document.querySelector(`#${socialID}`)
+	function open(btnID, modalID) {
+		const btn = document.querySelector(`#${btnID}`)
 		const modal = document.querySelector(`#${modalID}`)
 
-		social.addEventListener('click', () => {
+		btn.addEventListener('click', () => {
 			// scrollPosition = window.pageYOffset // Сохраняем текущую позицию прокрутки
 			modal.classList.add(`${modalID}_active`) // Добавляем класс - открываем модалку
 			document.body.style.overflow = 'hidden' // Останавливаем прокрутку сайта
@@ -66,7 +66,7 @@ export function modal() {
 	open('phone-1', 'modal-number')
 	open('phone-2', 'modal-number')
 
-	// open('order-1', 'modal-order')
+	open('order-1', 'modal-order')
 
 	open('info-1', 'modal-info')
 
@@ -86,7 +86,7 @@ export function modal() {
 
 	// Закрытие модалок
 	close('modal-number')
-	// close('modal-order')
+	close('modal-order')
 	close('modal-info')
 	close('modal-tg')
 	close('modal-ws')
