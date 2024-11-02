@@ -153,17 +153,25 @@
 
         &_ws {
             background: #25d366;
+            transition: 0.5s;
 
             &:after {
                 content: url("../../icons/ws.svg");
+            }
+            &:hover {
+                background: #29b95f;
             }
         }
 
         &_tg {
             background: #0088cc;
+            transition: 0.5s;
 
             &:after {
                 content: url("../../icons/tg.svg");
+            }
+            &:hover {
+                background: #107fb7;
             }
         }
     }

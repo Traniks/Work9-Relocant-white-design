@@ -85,9 +85,13 @@
 
         &_tg {
             background: #0088cc;
+            transition: 0.5s;
 
             &:after {
                 content: url("../../icons/tg.svg");
+            }
+            &:hover {
+                background: #107fb7;
             }
         }
     }

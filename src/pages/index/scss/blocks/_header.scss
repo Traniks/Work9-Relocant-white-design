@@ -72,6 +72,11 @@
             line-height: 16px;
             text-align: center;
             cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background: rgba(165, 161, 161, 0.3);
+            }
         }
     }
 
@@ -90,6 +95,12 @@
         text-align: center;
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            background: #c7c7c7;
+            color: #494c51;
+        }
     }
 }
 

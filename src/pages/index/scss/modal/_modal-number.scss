@@ -79,6 +79,11 @@
             text-align: center;
             cursor: pointer;
             transition: 1s;
+            
+            &:hover {
+                transition: 0.5s;
+                background: rgba(165, 161, 161, 0.3);
+            }
         }
         
         &_active {

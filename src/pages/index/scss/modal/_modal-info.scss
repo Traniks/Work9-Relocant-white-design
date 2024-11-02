@@ -88,10 +88,15 @@
             text-align: center;
             cursor: pointer;
             transition: 1s;
+            
+            &:hover {
+                transition: 0.5s;
+                background: rgba(165, 161, 161, 0.3);
+            }
         }
 
-        &_active {
 
+        &_active {
             button {
                 opacity: 0;
             }
@@ -129,17 +134,25 @@
 
         &_tg {
             background: #0088cc;
+            transition: 0.5s;
 
             &:after {
                 content: url("../../icons/tg.svg");
+            }
+            &:hover {
+                background: #107fb7;
             }
         }
         
         &_ws {
             background: #25d366;
+            transition: 0.5s;
 
             &:after {
                 content: url("../../icons/ws.svg");
+            }
+            &:hover {
+                background: #29b95f;
             }
         }
     }

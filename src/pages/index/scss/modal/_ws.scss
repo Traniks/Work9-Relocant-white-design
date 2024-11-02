@@ -85,9 +85,13 @@
 
         &_ws {
             background: #25d366;
+            transition: 0.5s;
 
             &:after {
                 content: url("../../icons/ws.svg");
+            }
+            &:hover {
+                background: #29b95f;
             }
         }
     }
