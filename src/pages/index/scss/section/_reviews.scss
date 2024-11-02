@@ -1,0 +1,238 @@
+.reviews {
+    margin: clamp(2.5rem, 1.607rem + 4.46vw, 5.625rem) auto 0 auto;
+    
+    position: relative;
+    z-index: var(--index-elem-2);
+
+    &__title {
+        margin: 0 auto;
+        max-width: 320px;
+        color: var(--text-main);
+        font-size: clamp(3rem, 2.286rem + 3.57vw, 5.5rem);
+        font-weight: 800;
+        line-height: clamp(2.813rem, 2.277rem + 2.68vw, 4.688rem);
+        text-align: center;
+    
+        span {
+            font-family: DAMN;
+            font-weight: 400;
+
+            font-size: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+            line-height: clamp(4.375rem, 4rem + 1.88vw, 6.25rem);
+
+            color: var(--text-title-second);
+        }
+    }
+
+    &__toggle-btns {
+        margin: clamp(2.5rem, 2rem + 2.5vw, 4.25rem) 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(1, 280px);
+        gap: 40px;
+        justify-content: center;
+    }
+
+    &__toggle-btn {
+        padding: 0 0 24px 0;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        text-align: center;
+        color: #7C7D7D;
+        border-bottom: 2px solid #979696;
+        cursor: pointer;
+
+        &_active {
+            color: var(--text-title);
+            border-bottom: 2px solid var(--text-title);
+        }
+    }
+    &__slider {
+        display: none;
+    }
+    &__slider_active {
+        display: block;
+    }
+}
+@media(min-width: 768px) {
+    .reviews {
+        &__toggle-btns {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media(min-width: 1024px) {
+    .reviews {
+        &__toggle-btns {
+            gap: 80px;
+        }
+    }
+}
+
+.swiper {
+    margin: 0 auto 0 auto;
+    // padding: 50px 0 50px 0;
+    padding: 50px 0 70px 0;
+    width: 280px;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+    position: relative;
+    // height: 440px;
+    // padding: 0 30px;
+    height: 600px;
+
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__iphone {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100%;
+        height: 100%;
+
+        background: #010101;
+        border: 5px solid #4e5568;
+        overflow: hidden;
+        border-radius: 40px;
+    }
+
+    &__screen {
+        margin: 10px;
+        height: 97%;
+        background: #000;
+        overflow: hidden;
+        border-radius: 40px;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none
+        }
+    }
+
+    &__notch {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        height: 34px;
+        background: #010101;
+        border-radius: 0 0 20px 20px;
+
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+    top: 97%;
+    &:after {
+        display: none;
+        content: "";
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        left: 0;
+        z-index: var(--index-topmost);
+        // width: 100%;
+        width: 44px;
+    }
+}
+
+.swiper-button-next {
+    right: 0;
+    top: 97%;
+    &:after {
+        display: none;
+        content: "";
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: var(--index-topmost);
+        transform: rotate(-180deg);
+        // width: 100%;
+        width: 44px;
+    }
+}
+
+@media(min-width: 520px) {
+    .swiper {
+        // width: 400px;
+    }
+    .swiper-slide {
+        // padding: 0 50px;
+        // height: 540px;
+    }
+    .swiper-button-prev {
+        img {
+            display: block;
+            width: unset;
+        }
+    }
+
+    .swiper-button-next {
+        img {
+            display: block;
+            width: unset;
+        }
+    }
+}
+@media(min-width: 768px) {
+    .swiper {
+        // width: 400px;
+    }
+}
+@media(min-width: 1200px) {
+    .swiper {
+        width: 1200px;
+        padding: 90px 0 50px 0;
+
+        &-slide {
+            position: relative;
+            height: 540px;
+            padding: 0 50px; 
+        }
+
+        &-button-prev {
+            top: var(--swiper-navigation-top-offset, 50%);
+            img {
+                width: 44px;
+            }
+        }
+        &-button-next {
+            top: var(--swiper-navigation-top-offset, 50%);
+            img {
+                width: 44px;
+            }
+        }
+    }
+    .swiper-slide {
+        height: 700px;
+    }
+    
+}
+
+@media(min-width: 768px) {
+    .reviews {
+        &__title {
+            max-width: 1240px;
+        }
+    }
+}
