@@ -40,7 +40,7 @@
                         <img id="ws-1" src="./icons/ws.svg" alt="whatsapp">
                     </div>
 
-                    <div class="header__content-number">
+                    <div id="phone-1" class="header__content-number">
                         <p>+7 395 241 53 55</p>
                         <button>Показать</button>
                     </div>
@@ -694,8 +694,8 @@
                         <h3 class="price__right-title">Вы всего в шаге от<br>профессиональной консультации наших менеджеров</h3>
 
                         <div class="price__right-btns">
-                            <button class="price__right-btn price__right-btn_ws">WhatsApp</button>
-                            <button class="price__right-btn price__right-btn_tg">Telegram</button>
+                            <button id="ws-4" class="price__right-btn price__right-btn_ws">WhatsApp</button>
+                            <button id="tg-4" class="price__right-btn price__right-btn_tg">Telegram</button>
                         </div>
                     </div>
                 </div>
@@ -741,8 +741,8 @@
                     <p class="contacts__bottom-text">Свяжитесь с нами через WhatsApp или Telegram<br> для консультации или запишитесь на визит в наш офис</p>
 
                     <div class="contacts__bottom-socials">
-                        <img id="tg-4" src="./icons/tg.svg" alt="Telegram" class="contacts__bottom-social">
-                        <img id="ws-4" src="./icons/ws.svg" alt="WhatsApp" class="contacts__bottom-social">
+                        <img id="tg-5" src="./icons/tg.svg" alt="Telegram" class="contacts__bottom-social">
+                        <img id="ws-5" src="./icons/ws.svg" alt="WhatsApp" class="contacts__bottom-social">
                     </div>
                 </div>
             </div>
@@ -754,18 +754,107 @@
     <footer class="footer">
         <div class="container" style="padding: 0;">
             <div class="footer__wrapper">
-                <div class="footer__content-number">
+                <div id="phone-2" class="footer__content-number">
                     <p>+7 395 241 53 55</p>
                     <button>Показать</button>
                 </div>
 
                 <div class="footer__content-socials">
-                    <img id="tg-5" src="./icons/tg.svg" alt="telegram">
-                    <img id="ws-5" src="./icons/ws.svg" alt="whatsapp">
+                    <img id="tg-6" src="./icons/tg.svg" alt="telegram">
+                    <img id="ws-6" src="./icons/ws.svg" alt="whatsapp">
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Модалка номера телефона -->
+    <section class="modal-number" id="modal-number">
+        <div class="container">
+            <div class="modal-number__wrapper">
+                <img class="modal-number__cross" id="modal-number__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-number__content">
+                    <div class="modal-number__content-number">
+                        <a href="tel:+73952415355">+7 395 241 53 55</a>
+                        <button>Показать</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка заказа звонка -->
+    <section class="modal-order" id="modal-order">
+        <div class="container">
+            <div class="modal-order__wrapper">
+                <img class="modal-order__cross" id="modal-order__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-order__content">
+                    <h2 class="modal-order__title">Введите свой номер телефона и мы свяжемся с вами</h2>
+
+                    <form class="modal-order__mail" id="modal-order__mail" action="mail.php" method="post">
+                        <input id="modal-order__input" placeholder="НОМЕР ТЕЛЕФОНА" name="username" required>
+
+                        <div class="modal-order__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+
+                        <!-- <input type="hidden" value="" name="type" id="all-modal-type"> -->
+                        <button type="submit" class="modal-order__button" onclick="
+                        if(document.querySelector('#modal-order__input').validity.valid){
+                            document.querySelector('#modal-thanks').classList.add('modal-thanks_active');
+                            document.body.style.overflow = 'hidden';
+                            document.querySelector('#modal-order').classList.remove('modal-order_active');
+                        }">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модалка информации -->
+    <section class="modal-info" id="modal-info">
+        <div class="container">
+            <div class="modal-info__wrapper">
+                <img class="modal-info__cross" id="modal-info__cross" src="icons/cross.svg" alt="cross">
+
+                <div class="modal-info__content">
+                    <h2 class="modal-info__content-title">Позвоните нам</h2>
+
+                    <div class="modal-info__number">
+                        <a href="tel:971507190519" class="modal-info__telephone">+971 50 719 0519</a>
+                        <div class="modal-info__bg">+971 50 719 0519</div>
+                        <button class="modal-info__btn">Показать</button>
+                    </div>
+
+                    <form class="modal-info__mail" action="mail.php" method="post">
+
+                        <h3 class="modal-info__mail-title">Или напишите в удобный вам мессенджер</h3>
+                        
+                        <div class="modal-info__socials">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                                <img id="modal-info__tg" class="modal-info__socials-icon" src="./icons/tg.svg" alt="telegram">
+                            </a>
+
+                            <a href="https://wa.me/971507190519" target="_blank">
+                                <img id="modal-info__ws" class="modal-info__socials-icon" src="./icons/ws.svg" alt="whatsapp">
+                            </a>
+                        </div>
+
+                        <div class="modal-info__checkbox">
+                            <input checked="" type="checkbox" required>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Модалка телеграмма -->
     <section class="modal-tg" id="modal-tg">

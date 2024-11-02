@@ -5,7 +5,7 @@ export function modal() {
 	function open(socialID, modalID) {
 		const social = document.querySelector(`#${socialID}`)
 		const modal = document.querySelector(`#${modalID}`)
-		
+
 		social.addEventListener('click', () => {
 			// scrollPosition = window.pageYOffset // Сохраняем текущую позицию прокрутки
 			modal.classList.add(`${modalID}_active`) // Добавляем класс - открываем модалку
@@ -17,7 +17,7 @@ export function modal() {
 	function close(modalID) {
 		const modal = document.querySelector(`#${modalID}`)
 		const cross = document.querySelector(`#${modalID}__cross`)
-		
+
 		cross.addEventListener('click', () => {
 			// window.scrollTo(0, scrollPosition) // Восстанавливаем позицию прокрутки
 			modal.classList.remove(`${modalID}_active`) // Убирает класс - закрывает модалку
@@ -25,18 +25,17 @@ export function modal() {
 		})
 	}
 
-	// Старт - Для раскрытия номера в modal-call
-	// const bg = document.querySelector('.modal-call__bg')
-	// const btn = document.querySelector('.modal-call__btn')
-	// btn.addEventListener('click', () => {
-	// 	bg.classList.add('modal-call__bg_active')
-	// 	btn.classList.add('modal-call__btn_active')
+	// Старт - Для раскрытия номера в modal-number
+	const number = document.querySelector('.modal-number__content-number')
+	const btn = document.querySelector('.modal-number__content-number button')
 
-	// 	setTimeout(() => {
-	// 		bg.style.display = 'none'
-	// 		btn.style.display = 'none'
-	// 	}, 1000)
-	// })
+	btn.addEventListener('click', () => {
+		number.classList.add('modal-number__content-number_active')
+
+		setTimeout(() => {
+			btn.style.display = 'none'
+		}, 1000)
+	})
 
 	// function hideElements() {
 	// 	const screenWidth = window.innerWidth
@@ -51,37 +50,38 @@ export function modal() {
 	// 		modalNumberBtn.style.display = ''
 	// 	}
 	// }
+
 	// Вызов функции при загрузке страницы и изменении размера окна
 	// window.addEventListener('load', hideElements)
 	// window.addEventListener('resize', hideElements)
-
 	// Конец - Для раскрытия номера в modal-call
 
 	// Открытие модалок
-	// open('phone-1', 'modal-order')
-	// open('phone-2', 'modal-order')
+	open('phone-1', 'modal-number')
+	open('phone-2', 'modal-number')
 
 	// open('order-1', 'modal-order')
-	// open('order-2', 'modal-order')
 
-	// open('call-1', 'modal-call')
-	// open('call-2', 'modal-call')
+	// open('info-1', 'modal-info')
 
 	open('tg-1', 'modal-tg')
 	open('tg-2', 'modal-tg')
 	open('tg-3', 'modal-tg')
 	open('tg-4', 'modal-tg')
 	open('tg-5', 'modal-tg')
+	open('tg-6', 'modal-tg')
 
 	open('ws-1', 'modal-ws')
 	open('ws-2', 'modal-ws')
 	open('ws-3', 'modal-ws')
 	open('ws-4', 'modal-ws')
 	open('ws-5', 'modal-ws')
+	open('ws-6', 'modal-ws')
 
 	// Закрытие модалок
-	// close('modal-call')
+	close('modal-number')
 	// close('modal-order')
+	// close('modal-info')
 	close('modal-tg')
 	close('modal-ws')
 	// close('modal-thanks')
