@@ -26,15 +26,21 @@ export function modal() {
 	}
 
 	// Старт - Для раскрытия номера в modal-number
-	const number = document.querySelector('.modal-number__content-number')
-	const btn = document.querySelector('.modal-number__content-number button')
+	const modals = document.querySelectorAll('.modal-number, .modal-info')
 
-	btn.addEventListener('click', () => {
-		number.classList.add('modal-number__content-number_active')
+	modals.forEach(modal => {
+		const number = modal.querySelector('.modal-number__content-number, .modal-info__content-number')
+		const btn = modal.querySelector('.modal-number__content-number button, .modal-info__content-number button')
 
-		setTimeout(() => {
-			btn.style.display = 'none'
-		}, 1000)
+		if (btn && number) {
+			btn.addEventListener('click', () => {
+				number.classList.add('modal-number__content-number_active','modal-info__content-number_active')
+
+				setTimeout(() => {
+					btn.style.display = 'none'
+				}, 1000)
+			})
+		}
 	})
 
 	// function hideElements() {
@@ -62,7 +68,7 @@ export function modal() {
 
 	// open('order-1', 'modal-order')
 
-	// open('info-1', 'modal-info')
+	open('info-1', 'modal-info')
 
 	open('tg-1', 'modal-tg')
 	open('tg-2', 'modal-tg')
@@ -81,7 +87,7 @@ export function modal() {
 	// Закрытие модалок
 	close('modal-number')
 	// close('modal-order')
-	// close('modal-info')
+	close('modal-info')
 	close('modal-tg')
 	close('modal-ws')
 	// close('modal-thanks')

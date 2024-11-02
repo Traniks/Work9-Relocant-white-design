@@ -104,7 +104,7 @@
                     <p class="hero__contacts-text">Пишите нам прямо сейчас</p>
 
                     <div class="hero__contacts-btns">
-                        <button class="hero__contacts-btn">Узнать подробности</button>
+                        <button id="info-1" class="hero__contacts-btn">Узнать подробности</button>
                         <div class="hero__contacts-socials">
                             <img id="tg-2" src="./icons/tg.svg" alt="telegram" class="hero__contacts-social">
                             <img id="ws-2" src="./icons/ws.svg" alt="whatsapp" class="hero__contacts-social">
@@ -822,33 +822,19 @@
                 <img class="modal-info__cross" id="modal-info__cross" src="icons/cross.svg" alt="cross">
 
                 <div class="modal-info__content">
-                    <h2 class="modal-info__content-title">Позвоните нам</h2>
+                    <h2 class="modal-info__content-title">Позвоните нам!</h2>
 
-                    <div class="modal-info__number">
-                        <a href="tel:971507190519" class="modal-info__telephone">+971 50 719 0519</a>
-                        <div class="modal-info__bg">+971 50 719 0519</div>
-                        <button class="modal-info__btn">Показать</button>
+                    <div class="modal-info__content-number">
+                        <a href="tel:+73952415355">+7 395 241 53 55</a>
+                        <button>Показать</button>
                     </div>
 
-                    <form class="modal-info__mail" action="mail.php" method="post">
-
-                        <h3 class="modal-info__mail-title">Или напишите в удобный вам мессенджер</h3>
-                        
-                        <div class="modal-info__socials">
-                            <a href="https://t.me/relocant_oae_bot" target="_blank">
-                                <img id="modal-info__tg" class="modal-info__socials-icon" src="./icons/tg.svg" alt="telegram">
-                            </a>
-
-                            <a href="https://wa.me/971507190519" target="_blank">
-                                <img id="modal-info__ws" class="modal-info__socials-icon" src="./icons/ws.svg" alt="whatsapp">
-                            </a>
-                        </div>
-
-                        <div class="modal-info__checkbox">
-                            <input checked="" type="checkbox" required>
-                            <p>Я согласен на обработку персональных данных</p>
-                        </div>
-                    </form>
+                    <a href="https://t.me/relocant_oae_bot" target="_blank">
+                        <button class="modal-info__btn modal-info__btn_tg">Telegram</button>
+                    </a>
+                    <a href="https://wa.me/971507190519" target="_blank">
+                        <button class="modal-info__btn modal-info__btn_ws">WhatsApp</button>
+                    </a>
 
                 </div>
 
