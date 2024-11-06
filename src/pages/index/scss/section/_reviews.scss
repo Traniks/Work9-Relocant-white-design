@@ -135,6 +135,14 @@
     }
 }
 
+#reviews-slider-1 {
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        height: 400px;
+    }
+}
+
 .swiper-button-prev {
     left: 0;
     top: 97%;
