@@ -29,12 +29,19 @@ export function modal() {
 	const modals = document.querySelectorAll('.modal-number, .modal-info')
 
 	modals.forEach(modal => {
-		const number = modal.querySelector('.modal-number__content-number, .modal-info__content-number')
-		const btn = modal.querySelector('.modal-number__content-number button, .modal-info__content-number button')
+		const number = modal.querySelector(
+			'.modal-number__content-number, .modal-info__content-number'
+		)
+		const btn = modal.querySelector(
+			'.modal-number__content-number button, .modal-info__content-number button'
+		)
 
 		if (btn && number) {
 			btn.addEventListener('click', () => {
-				number.classList.add('modal-number__content-number_active','modal-info__content-number_active')
+				number.classList.add(
+					'modal-number__content-number_active',
+					'modal-info__content-number_active'
+				)
 
 				setTimeout(() => {
 					btn.style.display = 'none'
@@ -63,8 +70,9 @@ export function modal() {
 	// Конец - Для раскрытия номера в modal-call
 
 	// Открытие модалок
-	open('phone-1', 'modal-number')
-	open('phone-2', 'modal-number')
+	open('phone-1', 'modal-info')
+	open('phone-2', 'modal-info')
+	open('phone-3', 'modal-info')
 
 	open('order-1', 'modal-order')
 
@@ -85,7 +93,6 @@ export function modal() {
 	open('ws-6', 'modal-ws')
 
 	// Закрытие модалок
-	close('modal-number')
 	close('modal-order')
 	close('modal-info')
 	close('modal-tg')

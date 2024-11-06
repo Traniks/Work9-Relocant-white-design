@@ -26,6 +26,9 @@
 
     <!-- FIXME: -->
     <!-- 1) Модалка лицензии + слайдер в ней -->
+    <!-- 2) Фоны -->
+
+    <!-- Вопрос с разными номерами в хедере и футере -->
 
     <!-- Header -->
     <header class="header">
@@ -65,7 +68,7 @@
         <section class="hero">
             <div class="container">
                 <div class="bg-1"></div>
-                <h2 class="hero__top-title">ВНЖ + Emirates ID</h2>
+                <h2 class="hero__top-title">VISA + Emirates ID</h2>
                 <h1 class="hero__title">Резидентская<br> виза в ОАЭ</h1>
 
                 <div class="hero__benefits">
@@ -785,7 +788,7 @@
 
                 <div class="price__wrapper">
                     <div class="price__left">
-                        <h3 class="price__left-title">Стартовая цена:<br><span>4000 AED</span></h3>
+                        <h3 class="price__left-title">Visa + Emirates ID:<br><span>4000 AED</span></h3>
 
                         <h4 class="price__left-subtitle">Дополнительные платежи:</h4>
                         <ul class="price__left-list">
@@ -838,7 +841,11 @@
 
                         <div class="contacts__item-content">
                             <h3 class="contacts__item-title">Телефон:</h3>
-                            <p class="contacts__item-description">+971 50 719 0519</p>
+
+                            <div id="phone-3" class="contacts__item-description">
+                                <p>+7 395 241 53 55</p>
+                                <button>Показать</button>
+                            </div>
                         </div>
                     </div>
                     
@@ -850,7 +857,9 @@
 
                         <div class="contacts__item-content">
                             <h3 class="contacts__item-title"> Адрес:</h3>
-                            <p class="contacts__item-description">Адрес офиса: UAE, Dubai, Expo Village Residences 2A - UNBOX - 1 этаж</p>
+                            <a href="https://maps.app.goo.gl/jgZH4ftEGmQpP7EN9">
+                                <p class="contacts__item-description">Адрес офиса: UAE, Dubai, Expo Village Residences 2A - UNBOX - 1 этаж</p>
+                            </a>
                         </div>
                     </div>
 
@@ -888,23 +897,6 @@
         </div>
     </footer>
 
-    <!-- Модалка номера телефона -->
-    <section class="modal-number" id="modal-number">
-        <div class="container">
-            <div class="modal-number__wrapper">
-                <img class="modal-number__cross" id="modal-number__cross" src="icons/cross.svg" alt="cross">
-
-                <div class="modal-number__content">
-                    <div class="modal-number__content-number">
-                        <a href="tel:+73952415355">+7 395 241 53 55</a>
-                        <button>Показать</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- Модалка заказа звонка -->
     <section class="modal-order" id="modal-order">
         <div class="container">
@@ -919,14 +911,14 @@
                         <input id="modal-order__input-tel" placeholder="Ваш номер телефона" name="usertel" required>
 
                         <button type="submit" class="modal-order__btn">Получите консультацию</button>
-                        <!-- <input type="hidden" value="" name="type" id="all-modal-type"> -->
-                        <!-- <button type="submit" class="modal-order__button" onclick="
-                        if(document.querySelector('#modal-order__input').validity.valid){
-                            document.querySelector('#modal-thanks').classList.add('modal-thanks_active');
-                            document.body.style.overflow = 'hidden';
-                            document.querySelector('#modal-order').classList.remove('modal-order_active');
-                        }">ОТПРАВИТЬ</button> -->
+
+                        <div class="modal-order__checkbox">
+                            <input id="modal-order__checkbox" type="checkbox" required>
+                            <label for="modal-order__checkbox">Я согласен на обработку персональных данных</label>
+                        </div>
                     </form>
+
+                    
 
                     <div class="modal-order__socials">
                         <a href="https://t.me/relocant_oae_bot">
@@ -964,6 +956,10 @@
                         <p class="modal-info__btn modal-info__btn_ws">WhatsApp</p>
                     </a>
 
+                    <div class="modal-order__checkbox">
+                        <input id="modal-order__checkbox" type="checkbox" required>
+                        <label for="modal-order__checkbox">Я согласен на обработку персональных данных</label>
+                    </div>
                 </div>
 
             </div>
@@ -981,6 +977,11 @@
                     <a href="https://t.me/relocant_oae_bot" target="_blank">
                         <p class="modal-tg__btn modal-tg__btn_tg">Telegram</p>
                     </a>
+
+                    <div class="modal-order__checkbox">
+                        <input id="modal-order__checkbox" type="checkbox" required>
+                        <label for="modal-order__checkbox">Я согласен на обработку персональных данных</label>
+                    </div>
                 </div>
 
             </div>
@@ -998,6 +999,11 @@
                     <a href="https://wa.me/971507190519" target="_blank">
                         <p class="modal-ws__btn modal-ws__btn_ws">WhatsApp</p>
                     </a>
+
+                    <div class="modal-order__checkbox">
+                        <input id="modal-order__checkbox" type="checkbox" required>
+                        <label for="modal-order__checkbox">Я согласен на обработку персональных данных</label>
+                    </div>
                 </div>
 
             </div>

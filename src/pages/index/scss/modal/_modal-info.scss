@@ -102,6 +102,7 @@
             }
         }
     }
+    
     &__btn {
         display: flex;
         justify-content: center;
@@ -159,6 +160,19 @@
                 background: #29b95f;
             }
         }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+        }
+
+        label {}
     }
 }
 

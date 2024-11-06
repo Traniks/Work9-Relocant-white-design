@@ -50,7 +50,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // gap: 25px;
+        gap: 25px;
     }
 
     &__btn {
@@ -98,6 +98,19 @@
                 background: #29b95f;
             }
         }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+        }
+
+        label {}
     }
 }
 

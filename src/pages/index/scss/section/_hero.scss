@@ -142,7 +142,7 @@
 
 @media(min-width: 768px) {
     .hero {
-        padding: 100px 0 0 0;
+        padding: 40px 0 0 0;
         background: none;
 
         .bg-1 {
@@ -174,7 +174,7 @@
         }
 
         &__benefits {
-            margin: clamp(3.125rem, 1.554rem + 3.27vw, 4.5rem) 0 0 0;
+            margin: clamp(3.125rem, 2.054rem + 2.23vw, 4.063rem) 0 0 0;
             flex-direction: row;
         }
 
@@ -188,22 +188,17 @@
         }
 
         &__contacts {
-            margin: clamp(3.125rem, 0.982rem + 4.46vw, 5rem) 0 0 0;
-            justify-content: start;
-            flex-direction: row;
+            margin: clamp(3.125rem, 2.054rem + 2.23vw, 4.063rem) 0 0 0;
+            width: 300px;
+            align-items: center;
             gap: 12px;
-        }
-
-        &__contacts-text {
-            width: 190px;
-            text-align: start;
         }
     }
 }
 @media(min-width: 1440px) {
     .hero {
         .bg-1 {
-            background-position: center top;
+            background-position: center calc(0% + -20px);;
             background-size: contain;
         }
     }
