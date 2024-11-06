@@ -78,6 +78,8 @@ export function modal() {
 
 	open('info-1', 'modal-info')
 
+	open('license-1', 'modal-license')
+
 	open('tg-1', 'modal-tg')
 	open('tg-2', 'modal-tg')
 	open('tg-3', 'modal-tg')
@@ -95,6 +97,7 @@ export function modal() {
 	// Закрытие модалок
 	close('modal-order')
 	close('modal-info')
+	close('modal-license')
 	close('modal-tg')
 	close('modal-ws')
 	// close('modal-thanks')

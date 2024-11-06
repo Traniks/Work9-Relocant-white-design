@@ -39,7 +39,7 @@ module.exports = {
 				use: ['css-loader', 'sass-loader'],
 			},
 			{
-				test: /\.(png|jpe?g|svg|ico|webp)/,
+				test: /\.(png|jpe?g|svg|ico|webp|pdf)/,
 				type: 'asset/resource',
 				generator: {
 					filename: 'assets/img/[name].[hash:8][ext]',

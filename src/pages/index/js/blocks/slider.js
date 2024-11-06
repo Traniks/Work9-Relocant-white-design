@@ -1,8 +1,8 @@
 import Swiper from 'swiper'
-import { Pagination, Navigation, Autoplay, Keyboard, EffectCoverflow } from 'swiper/modules'
+import { Pagination, Navigation, EffectCoverflow } from 'swiper/modules'
 
 export function slider() {
-	const swiperDescriptionOne = new Swiper('#reviews-slider-1', {
+	const swiperReviewsOne = new Swiper('#reviews-slider-1', {
 		modules: [Pagination, Navigation, EffectCoverflow],
 		speed: 500,
 		effect: 'coverflow',
@@ -36,7 +36,7 @@ export function slider() {
 		},
 	})
 
-	const swiperDescriptionTwo = new Swiper('#reviews-slider-2', {
+	const swiperReviewsTwo = new Swiper('#reviews-slider-2', {
 		modules: [Pagination, Navigation, EffectCoverflow],
 		speed: 500,
 		effect: 'coverflow',
@@ -66,6 +66,31 @@ export function slider() {
 		breakpoints: {
 			1200: {
 				slidesPerView: '3',
+			},
+		},
+	})
+
+	const swiperLicense = new Swiper('#license-slider', {
+		modules: [Navigation],
+		speed: 500,
+		effect: 'coverflow',
+		slidesPerView: '1',
+		spaceBetween: 30,
+		grabCursor: true,
+		centeredSlides: true,
+		rewind: true,
+
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		breakpoints: {
+			1200: {
+				slidesPerView: '1',
+			},
+			768: {
+				slidesPerView: '1',
 			},
 		},
 	})
@@ -73,11 +98,14 @@ export function slider() {
 	// Функция для установки значения num в зависимости от размера экрана
 	function setNum() {
 		if (window.innerWidth > 1200) {
-			swiperDescriptionOne.slideTo(1)
-			swiperDescriptionTwo.slideTo(1)
+			swiperReviewsOne.slideTo(1)
+			swiperReviewsTwo.slideTo(1)
+		} else if (window.innerWidth > 767) {
+			swiperLicense.slideTo(1)
 		} else {
-			swiperDescriptionOne.slideTo(0)
-			swiperDescriptionTwo.slideTo(0)
+			swiperReviewsOne.slideTo(0)
+			swiperReviewsTwo.slideTo(0)
+			swiperLicense.slideTo(0)
 		}
 	}
 

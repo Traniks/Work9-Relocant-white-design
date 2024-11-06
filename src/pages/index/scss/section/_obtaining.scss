@@ -15,7 +15,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 280px);
-        grid-auto-rows: 160px;
+        grid-auto-rows: 185px;
         gap: 20px;
     }
 
@@ -80,6 +80,7 @@
     .obtaining {
         &__wrapper {
             grid-template-columns: repeat(1, 300px);
+            grid-auto-rows: 160px;
         }
     }
 }
