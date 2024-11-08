@@ -49,7 +49,9 @@
             border: 1px solid var(--text-main);
             border-radius: 12px;
 
+            -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
+
             background: rgba(255, 255, 255, 0.1);
 
             color: #000000;
