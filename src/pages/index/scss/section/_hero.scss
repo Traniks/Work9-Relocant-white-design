@@ -142,7 +142,7 @@
 
 @media(min-width: 768px) {
     .hero {
-        padding: 40px 0 0 0;
+        padding: 30px 0 0 0;
         background: none;
 
         .bg-1 {
@@ -157,7 +157,7 @@
             background: url("../img/bg-1.webp");
             background-repeat: no-repeat;
             // background-size: 100px 100px;
-            background-position: clamp(-55.938rem, -98.438rem + 88.54vw, -18.75rem) 70px;
+            background-position: clamp(-55.938rem, -98.438rem + 88.54vw, -18.75rem) 0px;
             // background-size: cover;
             z-index: -1;
         }
@@ -174,7 +174,7 @@
         }
 
         &__benefits {
-            margin: clamp(3.125rem, 2.054rem + 2.23vw, 4.063rem) 0 0 0;
+            margin: 55px 0 0 0;
             flex-direction: row;
         }
 
@@ -188,7 +188,7 @@
         }
 
         &__contacts {
-            margin: clamp(3.125rem, 2.054rem + 2.23vw, 4.063rem) 0 0 0;
+            margin: 55px 0 0 0;
             width: 300px;
             align-items: center;
             gap: 12px;
@@ -198,7 +198,7 @@
 @media(min-width: 1440px) {
     .hero {
         .bg-1 {
-            background-position: center calc(0% + -20px);;
+            background-position: center calc(0% + 0px);;
             background-size: contain;
         }
     }
