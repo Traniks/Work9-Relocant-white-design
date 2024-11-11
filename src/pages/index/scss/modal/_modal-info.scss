@@ -78,9 +78,8 @@
             border: 2.4px solid var(--text-main);
             border-radius: 20px;
 
-            -webkit-backdrop-filter: blur(7px);
-            backdrop-filter: blur(7px);
-            background: rgba(255, 255, 255, 0.1);
+            // backdrop-filter: blur(7px);
+            background: #e5e5e5;
 
             color: #000000;
             font-size: 21px;
@@ -92,7 +91,7 @@
 
             &:hover {
                 transition: 0.5s;
-                background: rgba(165, 161, 161, 0.3);
+                background: #c7c7c7;
             }
         }
 

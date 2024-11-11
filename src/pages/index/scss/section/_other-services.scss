@@ -22,6 +22,7 @@
         height: 300px;
         border-radius: 8px;
         background: var(--bg-box);
+        overflow: hidden;
     }
 
     &__item-img {
