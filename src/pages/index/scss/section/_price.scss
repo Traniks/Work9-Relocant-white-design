@@ -22,7 +22,7 @@
     }
 
     &__left-title {
-        font-size: 48px;
+        font-size: 44px;
         font-weight: 400;
         line-height: 60px;
         color: var(--text-main);
@@ -187,6 +187,10 @@
         &__left {
             padding: 40px 20px 40px 20px;
             border-radius: 8px 0 0 8px;
+        }
+
+        &__left-title {
+            font-size: 48px;
         }
 
         &__left-subtitle {

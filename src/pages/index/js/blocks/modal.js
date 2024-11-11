@@ -25,6 +25,27 @@ export function modal() {
 		})
 	}
 
+	// Функция для открытия модального окна с динамическим заголовком услуг
+	function openServiceModal() {
+		const serviceItems = document.querySelectorAll('.other-services__item')
+		const modal = document.getElementById('modal-services')
+		const modalTitle = document.querySelector(
+			'.modal-services__content-title'
+		)
+
+		serviceItems.forEach(item => {
+			item.addEventListener('click', () => {
+				// Получаем заголовок из атрибута data-title
+				const title = item.getAttribute('data-title')
+				modalTitle.textContent = title // Меняем заголовок в модальном окне
+				modal.classList.add('modal-services_active') // Открываем модальное окно
+				document.body.style.overflow = 'hidden' // Останавливаем прокрутку страницы
+			})
+		})
+	}
+
+	openServiceModal()
+
 	// Старт - Для раскрытия номера в modal-number
 	const modals = document.querySelectorAll('.modal-number, .modal-info')
 
@@ -74,10 +95,9 @@ export function modal() {
 	open('phone-2', 'modal-info')
 	open('phone-3', 'modal-info')
 
-	open('order-1', 'modal-order')
-
 	open('info-1', 'modal-info')
 
+	open('order-1', 'modal-order')
 	open('license-1', 'modal-license')
 
 	open('tg-1', 'modal-tg')
@@ -100,5 +120,6 @@ export function modal() {
 	close('modal-license')
 	close('modal-tg')
 	close('modal-ws')
+	close('modal-services')
 	// close('modal-thanks')
 }
