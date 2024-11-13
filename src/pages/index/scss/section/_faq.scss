@@ -46,7 +46,7 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 23px;
-        padding: 0 0 0 20px;
+        // padding: 0 0 0 20px;
         max-height: 0px;
         overflow: hidden;
         transition: 0.5s;
@@ -56,9 +56,30 @@
         }
     }
 
+    &__item-list p {
+        color: var(--text-second);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
     &__item-list_active {
         max-height: 400px;
         // margin: 12px 0 0 0;
+
+        p {
+            max-height: 400px;
+        }
+    }
+}
+.faq {
+    &__item:first-child {
+        .faq__item-list {
+            padding: 0 0 0 20px;
+        }
     }
 }
 
