@@ -1,11 +1,12 @@
 .contacts {
+    position: relative;
     margin: clamp(5rem, 3.393rem + 8.04vw, 10.625rem) 0 0 0;
-    padding: 0 0 90px 0;
+    padding: 0 0 350px 0;
 
     background: url("../img/bg-mob-2.webp");
     background-repeat: no-repeat;
     // background-size: 100% 100%;
-    background-position: -140px 100px;
+    background-position: -140px bottom;
     // background-size: cover;
 
     &__title {
@@ -92,46 +93,23 @@
         }
     }
 
-    &__hr {
-        margin: 40px 0 0 0;
-
-        border: none;
-        height: 1px;
-        background: #000000;
-        opacity: 0.3;
-    }
-
-    &__bottom {
-        margin: 56px auto 0 auto;
-    }
-
-    &__bottom-text {
-        color: var(--text-main);
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: center;
-    }
-
-    &__bottom-socials {
-        margin: 38px 0 0 0;
-        padding: 0 0 38px 0;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    &__bottom-social {
-        width: 34px;
-        height: 34px;
-        cursor: pointer;
+    &__map {
+        margin: 50px 0 0 0;
+        position: absolute;
+        overflow: hidden;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 8px;
+        height: 480px;
+        width: 280px;
+        max-width: 1200px;
     }
 }
 
 @media(min-width: 768px) {
     .contacts {
         background: none;
-        padding: 0 0 0 0;
+        padding: 0 0 390px 0;
 
         &__wrapper {
             flex-direction: row;
@@ -140,13 +118,8 @@
             gap: 190px;
         }
 
-        &__hr {
-            margin: 28px 0 0 0;
-        }
-
-        &__bottom-socials {
-            margin: 50px 0 0 0;
-            padding: 0 0 50px 0;
+        &__map {
+            width: 90%;
         }
     }
 }

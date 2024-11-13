@@ -45,7 +45,6 @@ a {
     }
 }
 
-
 @media(min-width: 1440px) {
     .bg-2 {
         position: absolute;
@@ -91,7 +90,7 @@ a {
         background: url("../img/bg-4.webp");
         background-repeat: no-repeat;
         // background-size: 100px 100px;
-        background-position: left calc(100% - 0px);
+        background-position: left calc(100% - 400px);
         // background-size: cover;
         z-index: -1;
         background-size: contain;
