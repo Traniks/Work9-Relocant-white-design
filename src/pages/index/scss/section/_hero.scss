@@ -113,17 +113,42 @@
         cursor: pointer;
         transition: 0.5s;
 
+        &:after {
+            content: url("../../icons/hero/arrow-btn.svg");
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            // background-color: rgba(52, 152, 219, 0.5);
+            border: 1px solid rgb(52, 152, 219);
+            animation: wave-pulse 2s ease-out infinite;
+            transform: scale(1);
+            opacity: 1;
+            z-index: -1;
+        }
+
         &:hover {
             background: #203e68;
+            
+            &:before {
+                // animation-play-state: paused;
+                animation: none;
+                border: none;
+                transform: scale(1.1);
+            }
         }
-    }
-    
-    &__contacts-btn::after {
-        content: url("../../icons/hero/arrow-btn.svg");
-        position: absolute;
-        right: 32px;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     &__contacts-socials {
@@ -137,6 +162,15 @@
         width: 34px;
         height: 34px;
         cursor: pointer;
+
+        transition: transform 0.3s ease;
+        animation: pulse 1.75s infinite;
+    
+        &:hover {
+            // animation-play-state: paused;
+            animation: none;
+            transform: scale(1.1);
+        }
     }
 }
 
